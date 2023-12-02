@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  python:
+    build: ./python
+    container_name: python
+    volumes:
+      - .:/python
+    ports:
+        - "8000:8000"
+    tty: true
+    stdin_open: true
